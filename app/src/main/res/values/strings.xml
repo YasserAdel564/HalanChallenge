@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HalanChallenge</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="password">كلمه السر</string>
+    <string name="my_products">منتجاتي</string>
+    <string name="more">المزيد</string>
+    <string name="back">رجوع</string>
+    <string name="product_details">تفاصيل المنتج</string>
+    <string name="description">الوصف</string>
+    <string name="error_general">حدث خطأ ما</string>
+    <string name="no_Connection">لايوجد إتصال بالانترنت</string>
+    <string name="try_again">حاول مره أخري</string>
+    <string name="empty_content">لايوجد محتوي متوفر</string>
+    <string name="loading">جاري التحميل…</string>
+    <string name="required_field">هذا الحقل مطلوب</string>
+    <string name="username_validation">يجب أن لايحتوي اسم المستخدم علي ارقام</string>
+    <string name="username_length">يجب أن يحتتوي اسم المستخدم من 8 ل 15 خانه </string>
+    <string name="password_validation">يجب أن تحتوي كلمة المرور على 8 خانات </string>
+
+    <string name="login_label">تسجيل الدخول</string>
+    <string name="profile_label">الصفحه الشخصيه</string>
+    <string name="product_label">تفاصيل المنتج</string>
+
+</resources>
