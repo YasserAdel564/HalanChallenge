@@ -15,7 +15,6 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.HalanChallenge">
 
-        <activity android:name=".ProductDetailsActivity"/>
         <activity android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>

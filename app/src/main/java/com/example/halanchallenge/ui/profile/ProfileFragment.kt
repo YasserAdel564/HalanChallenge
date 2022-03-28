@@ -29,7 +29,6 @@ class ProfileFragment : Fragment() {
     private lateinit var binding: ActivityProductsListBinding
     private val sharedVM: SharedVM by activityViewModels()
     private val adapter = ProductsAdapter()
-
     @Inject
     lateinit var helper: PreferencesHelper
 
