@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.blankj.utilcode.util.NetworkUtils
 import com.example.halanchallenge.data.model.login.LoginBody
+import com.example.halanchallenge.data.model.login.UserInfo
 import com.example.halanchallenge.data.storage.local.PreferencesHelper
 import com.example.halanchallenge.repos.auth.LoginRepo
 import com.example.halanchallenge.utils.DataResource
@@ -29,6 +30,8 @@ constructor(
     val uiState: LiveData<Event<UiStates>>
         get() = _uiState
 
+    var userInfo: UserInfo? = null
+
     fun login(loginBody: LoginBody) {
         if (NetworkUtils.isConnected()) {
             if (job?.isActive == true)
@@ -47,6 +50,7 @@ constructor(
                     val loginResponse = response.value
                     if (loginResponse.status.equals("OK")) {
                         helper.token = loginResponse.token
+                        userInfo = loginResponse.userInfo
                         _uiState.value = Event(UiStates.Success)
                     } else
                         _uiState.value = Event(UiStates.Error)

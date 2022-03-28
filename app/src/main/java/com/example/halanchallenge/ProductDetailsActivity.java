@@ -16,7 +16,7 @@ import com.arindicatorview.ARIndicatorView;
 
 public class ProductDetailsActivity extends AppCompatActivity {
 
-    Product product;
+//    Product product;
 
     TextView description,title,price;
     Button back;
@@ -39,23 +39,23 @@ public class ProductDetailsActivity extends AppCompatActivity {
         indicatorView = findViewById(R.id.ar_indicator);
 
         Bundle bundle = getIntent().getBundleExtra("PARCELABLE");
-        product = (Product) bundle.getParcelable("ITEM");
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-        description.setText(product.deal_description);
-        title.setText(product.name_ar);
-        description.setMovementMethod(new ScrollingMovementMethod());
-        price.setText("كاش"+"           "+product.price+"جنيه");
-
-        imagesAdapter = new ImagesAdapter(this,product.images);
-        imagesListRV.setAdapter(imagesAdapter);
-
-        indicatorView.attachTo(imagesListRV,true);
+//        product = (Product) bundle.getParcelable("ITEM");
+//
+//        back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                finish();
+//            }
+//        });
+//        description.setText(product.deal_description);
+//        title.setText(product.name_ar);
+//        description.setMovementMethod(new ScrollingMovementMethod());
+//        price.setText("كاش"+"           "+product.price+"جنيه");
+//
+//        imagesAdapter = new ImagesAdapter(this,product.images);
+//        imagesListRV.setAdapter(imagesAdapter);
+//
+//        indicatorView.attachTo(imagesListRV,true);
 
     }
 

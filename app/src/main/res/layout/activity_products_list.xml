@@ -99,7 +99,6 @@
                             android:layout_marginStart="24dp"
                             android:textColor="@color/black"
                             android:textSize="20sp"
-
                             app:layout_constraintStart_toEndOf="@+id/user_iv"
                             app:layout_constraintTop_toTopOf="@+id/user_iv"
                             tools:text="asdsadsasdsdas" />

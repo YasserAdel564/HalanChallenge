@@ -21,7 +21,13 @@
         android:id="@+id/profile_fragment"
         android:name="com.example.halanchallenge.ui.profile.ProfileFragment"
         android:label="@string/profile_label"
-        tools:layout="@layout/profile_fragment"/>
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/action_profile_fragment_to_product_details_fragment"
+            app:destination="@id/product_details_fragment"
+            app:popUpTo="@id/profile_fragment"
+             />
+    </fragment>
 
     <fragment
         android:id="@+id/product_details_fragment"

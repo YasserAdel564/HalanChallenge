@@ -16,10 +16,18 @@ class PreferencesHelper @Inject constructor(@ApplicationContext val context: Con
 
     }
 
-    init { sharedPreferences = context.getSharedPreferences(SHARED_NAME, Context.MODE_PRIVATE) }
+    init {
+        sharedPreferences = context.getSharedPreferences(SHARED_NAME, Context.MODE_PRIVATE)
+    }
 
     var token: String?
-        get() { return sharedPreferences.getString(TOKEN, "") }
+        get() {
+            return sharedPreferences.getString(TOKEN, "")
+        }
         set(value) = sharedPreferences.edit().putString(TOKEN, value).apply()
+
+    fun clearPreferences() {
+        token = ""
+    }
 
 }

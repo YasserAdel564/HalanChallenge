@@ -5,11 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.halanchallenge.R
 import com.example.halanchallenge.data.model.login.LoginBody
 import com.example.halanchallenge.databinding.ActivityLoginBinding
+import com.example.halanchallenge.ui.SharedVM
 import com.example.halanchallenge.utils.Constants.symbols
 import com.example.halanchallenge.utils.UiStates
 import com.example.halanchallenge.utils.observeEvent
@@ -20,6 +22,7 @@ class LoginFragment : Fragment() {
 
     private val viewModel: LoginVM by viewModels()
     private lateinit var binding: ActivityLoginBinding
+    private val sharedVM: SharedVM by activityViewModels()
 
 
     override fun onCreateView(
@@ -118,6 +121,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun onSuccess() {
+        viewModel.userInfo?.let { sharedVM.setUserLiveData(it) }
         viewInputs()
         findNavController().navigate(R.id.action_login_fragment_to_profile_fragment)
     }

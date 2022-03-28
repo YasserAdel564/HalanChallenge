@@ -14,7 +14,7 @@ interface RetrofitApiService {
     ): LoginResponse
 
 
-    @POST("/products")
+    @GET("/products")
     suspend fun productsAsync(
         @Header("Authorization") token: String
     ): ProductResponse

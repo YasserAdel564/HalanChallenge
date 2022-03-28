@@ -34,7 +34,7 @@
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             android:layout_marginHorizontal="20dp"
-            app:lottie_rawRes="@raw/heart_beat" />
+            app:lottie_rawRes="@raw/loading" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/error"
