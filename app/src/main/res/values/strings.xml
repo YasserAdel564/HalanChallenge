@@ -17,9 +17,9 @@
     <string name="username_validation">يجب أن لايحتوي اسم المستخدم علي ارقام</string>
     <string name="username_length">يجب أن يحتتوي اسم المستخدم من 8 ل 15 خانه </string>
     <string name="password_validation">يجب أن تحتوي كلمة المرور على 8 خانات </string>
-
     <string name="login_label">تسجيل الدخول</string>
     <string name="profile_label">الصفحه الشخصيه</string>
     <string name="product_label">تفاصيل المنتج</string>
+    <string name="epg">  جنيه مصري  </string>
 
 </resources>
